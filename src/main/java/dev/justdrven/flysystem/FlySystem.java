@@ -1,17 +1,19 @@
 package dev.justdrven.flysystem;
 
+import dev.justdrven.commands.Fly;
+import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class FlySystem extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
-
+        saveDefaultConfig();
+        this.getCommand("fly").setExecutor(new Fly(this));
     }
 
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
+    public String getMessage(String messageID){
+        return ChatColor.translateAlternateColorCodes('&', this.getConfig().getString("messages." + messageID));
     }
+
 }
