@@ -1,0 +1,6 @@
+name: FlySystem
+version: '${version}'
+main: dev.justdrven.flysystem.FlySystem
+authors: [JustDrven]
+description: This plugin is on the fly
+website: https://github.com/JustDrven
