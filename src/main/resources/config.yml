@@ -1,0 +1,5 @@
+messages:
+  use: "&7Use: &a/fly"
+  no-permission: "&cYou're not allowed to do this!"
+  fly-enable: "&aFly was enabled."
+  fly-disable: "&cFly was disabled."
